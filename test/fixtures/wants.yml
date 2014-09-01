@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aim1: 1
+  aim2: 1
+  photo1: 
+  photo2: 
+  user_id: 
+
+two:
+  aim1: 1
+  aim2: 1
+  photo1: 
+  photo2: 
+  user_id: 
