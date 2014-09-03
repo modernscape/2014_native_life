@@ -1,10 +1,22 @@
 NativeLife::Application.routes.draw do
   devise_for :users
+
+  # match 'phase_1' => 'leads#phase_1', :via => :GET
+  get 'phase_0' => 'leads#phase_0'
+  get 'phase_1' => 'leads#phase_1'
+  get 'phase_2' => 'leads#phase_2'
+  get 'phase_3' => 'leads#phase_3'
+  get 'phase_4' => 'leads#phase_4'
+  get 'phase_5' => 'leads#phase_5'
+  get 'phase_6' => 'leads#phase_6'
+  get 'phase_7' => 'leads#phase_7'
+  #get 'phase_1_to_2' => 'leads#phase_1_to_2'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'leads#phase_0'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
