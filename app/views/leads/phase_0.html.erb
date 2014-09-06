@@ -1,1 +1,12 @@
-<%= link_to "あなたは本当の人生を歩んでいますか？", '/phase_1' %>
+あなたは本当の人生を歩んでいますか？
+<br><br>
+
+<%= form_for @input_word, :url => '/phase_1' do |f| %>
+  <div class="actions">
+  	<%= f.submit '次へ' %>
+  </div>
+<% end %>
+
+<!--
+<%= link_to "次へ", '/phase_1' %>
+-->

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  desire_1: MyString
+  desire_2: MyString
+  desire_3: MyString
+  achievement_percent: MyString
+
+two:
+  desire_1: MyString
+  desire_2: MyString
+  desire_3: MyString
+  achievement_percent: MyString

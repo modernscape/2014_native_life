@@ -1,12 +1,23 @@
 <h1>2</h1>
 
 <p>
+	あなたが本当は<br>
 	一番やりたいことはなんですか？
 </p>
 
-<%= text_field :page, :name %>
+<%= form_for @input_word, :url => '/phase_4' do |f| %>
+  <div class="field">
+    <%= f.hidden_field :desire_1 %>
+  </div>
+  <div class="field">
+    <%= f.text_field :desire_2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit "次へ" %>
+  </div>
 
 <br><br>
-
-<%= link_to "前へ", '/phase_2' %>
-<%= link_to "次へ", '/phase_4' %>
+<p>
+	１番欲しいもの：<%= @input_word.desire_1 %>
+</p>
+<% end %>

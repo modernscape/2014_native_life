@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140901102430) do
+ActiveRecord::Schema.define(version: 20140904140040) do
 
   create_table "actions", force: true do |t|
     t.datetime "achievement_date"
@@ -32,6 +32,15 @@ ActiveRecord::Schema.define(version: 20140901102430) do
   end
 
   add_index "articles", ["want_id"], name: "index_articles_on_want_id"
+
+  create_table "input_words", force: true do |t|
+    t.string   "desire_1"
+    t.string   "desire_2"
+    t.string   "desire_3"
+    t.string   "achievement_percent"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "merits", force: true do |t|
     t.string   "title"

@@ -1,15 +1,14 @@
 NativeLife::Application.routes.draw do
   devise_for :users
 
-  # match 'phase_1' => 'leads#phase_1', :via => :GET
-  get 'phase_0' => 'leads#phase_0'
-  get 'phase_1' => 'leads#phase_1'
-  get 'phase_2' => 'leads#phase_2'
-  get 'phase_3' => 'leads#phase_3'
-  get 'phase_4' => 'leads#phase_4'
-  get 'phase_5' => 'leads#phase_5'
-  get 'phase_6' => 'leads#phase_6'
-  get 'phase_7' => 'leads#phase_7'
+  post 'phase_0' => 'leads#phase_0'
+  post 'phase_1' => 'leads#phase_1'
+  post 'phase_2' => 'leads#phase_2'
+  post 'phase_3' => 'leads#phase_3'
+  post 'phase_4' => 'leads#phase_4'
+  post 'phase_5' => 'leads#phase_5'
+  post 'phase_6' => 'leads#phase_6'
+  post 'phase_7' => 'leads#phase_7'
   #get 'phase_1_to_2' => 'leads#phase_1_to_2'
 
   # The priority is based upon order of creation: first created -> highest priority.

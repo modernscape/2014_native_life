@@ -4,4 +4,8 @@
 	実現したいですか？<br>
 </p>
 
-<%= link_to "次へ", '/phase_2' %>
+<%= form_for @input_word, :url => '/phase_2' do |f| %>
+  <div class="actions">
+  	<%= f.submit '次へ' %>
+  </div>
+<% end %>

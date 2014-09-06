@@ -1,10 +1,10 @@
 <p>
-  本当に実現したい人生の%
+  本当の人生の達成度：<br>
 </p>
+<%= @input_word.achievement_percent %>%<br><br>
 
-<br>
-15 %
-<br><br>
-
-<%= link_to "前へ", '/phase_5' %>
-<%= link_to "次へ", '/phase_7' %>
+<%= form_for @input_word, :url => '/phase_7' do |f| %>
+  <div class="actions">
+  	<%= f.submit '次へ' %>
+  </div>
+<% end %>

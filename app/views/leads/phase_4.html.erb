@@ -1,12 +1,27 @@
 <h1>3</h1>
 
 <p>
+	あなたは本当は<br>
 	どんな自分になりたいですか？
 </p>
 
-<%= text_field :page, :name %>
+<%= form_for @input_word, :url => '/phase_5' do |f| %>
+  <div class="field">
+    <%= f.hidden_field :desire_1 %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :desire_2 %>
+  </div>
+  <div class="field">
+    <%= f.text_field :desire_3 %>
+  </div>
+  <div class="actions">
+    <%= f.submit "次へ" %>
+  </div>
 
 <br><br>
-
-<%= link_to "前へ", '/phase_3' %>
-<%= link_to "次へ", '/phase_5' %>
+<p>
+	１番欲しいもの：<%= @input_word.desire_1 %><br>
+	１番やりたいこと：<%= @input_word.desire_2 %>
+</p>
+<% end %>

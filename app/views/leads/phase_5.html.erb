@@ -1,12 +1,24 @@
 <p>
-	今まで挙げた
-	あなたが本当に実現したい人生を<br>
-	あなたは何%実現していますか？
+	１番欲しいもの：<%= @input_word.desire_1 %><br>
+	１番やりたいこと：<%= @input_word.desire_2 %><br>
+	１番やりたいこと：<%= @input_word.desire_3 %><br><br>
 </p>
 
-<%= text_field :page, :name %> %
+<p>
+	今まで挙げた<br>
+	あなたが本当に実現したい人生を<br>
+	あなたは何%実現していますか？<br>
+</p>
+
+<%= form_for @input_word, :url => '/phase_6' do |f| %>
+  <div class="field">
+    <%= f.text_field :achievement_percent %> %
+  </div>
+  <div class="actions">
+    <%= f.submit "次へ" %>
+  </div>
 
 <br><br>
 
-<%= link_to "前へ", '/phase_4' %>
-<%= link_to "次へ", '/phase_6' %>
+<% end %>
+
